@@ -1,63 +1,29 @@
-BookBuds is a modern, clean, and responsive online bookstore built using HTML, CSS, and JavaScript. It allows users to explore a variety of book categories and also includes a live book search powered by the Google Books API. If a book is available, users can preview or access it directly.
+BookBuds is a fully responsive and visually appealing bookstore website created by Shalu Kumari using only HTML, CSS, and JavaScript. The website features beautifully styled sections like book categories, an about section, contact form, and a powerful book search using the Google Books API. Users can explore books, view previews, and even access PDFs or purchase links if available.
 
-🔍 Features
-📖 Stylish, responsive layout
+Features
+✨ Clean and modern design
 
-🧾 Categories like Novels, History Books, Storybooks, and Textbooks
+📚 Book categories like Novels, Storybooks, History Books, and Textbooks
 
-🔎 Integrated Search Bar with real-time book search using Google Books API
+🔎 Live book search using the Google Books API
 
-📥 Access book previews, details, or download links if available
+📖 View book previews or links directly from the search results
 
-💬 Clean and interactive contact form
+💬 Contact form with responsive layout
 
-🌐 External links to social profiles
+🌐 Social media links to stay connected
 
-📱 Mobile-friendly design
+📱 Fully mobile-friendly and responsive across all devices
 
-🛠️ Technologies Used
+Built With:
 HTML5
 
 CSS3
 
-JavaScript (Vanilla)
+JavaScript
 
 Google Books API
 
 Font Awesome for icons
 
-📸 Screenshots
-Add screenshots here using:
-
-md
-Copy
-Edit
-![Homepage](assets/screenshot-home.png)
-![Search Result](assets/screenshot-search.png)
-🚀 How to Use
-Clone the repository:
-
-bash
-Copy
-Edit
-git clone https://github.com/your-username/bookbuds.git
-Open index.html in your browser.
-
-Use the search bar to find any book you like.
-
-Click "View Book" to open the preview or detail page.
-
-🌐 Live Demo
-Add your GitHub Pages or Netlify/Vercel link here if deployed:
-👉 Live Demo
-
-🙌 Credits
-Google Books API
-
-Font Awesome
-
-Images used from royalty-free sources or your custom assets
-
-📬 Contact
-Created with ❤️ by Shalu Kumari
-📧 Feel free to connect for feedback, collaborations, or improvements.
+🌐 Live Demo:https://shalukumari-web.github.io/Book-Store/
