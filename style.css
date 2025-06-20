@@ -1,0 +1,315 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  padding-top: 6rem;
+  background-color: #fff;
+}
+
+/* Navbar */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 5rem;
+  background-color: #032703;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 2rem;
+  z-index: 1000;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.navbar h1 {
+  font-size: 2rem;
+  color: #fff;
+}
+
+.navbar ul {
+  display: flex;
+  gap: 2rem;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 16px;
+  position: relative;
+}
+.navbar ul li a::before{
+    content: "";
+    bottom: 0;
+    left: 0;
+    height: 1.5px;
+    width: 0;
+    position: absolute;
+    background-color: #fff;
+    transition: width 0.7s ease;
+}
+.navbar ul li a::after{
+    content: "";
+    top: 0;
+    right: 0;
+    height: 1.5px;
+    width: 0;
+    position: absolute;
+    background-color: #fff;
+    transition: width 0.7s ease;
+}
+.navbar ul li a:hover::before,.navbar ul li a:hover::after {
+  width: 100%;
+}
+
+.search-box {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: #fff;
+  border-radius: 30px;
+  padding: 0 1rem;
+  height: 35px;
+}
+
+.search-box input {
+  border: none;
+  outline: none;
+  height: 100%;
+  border-radius: 30px;
+}
+
+/* Home Section */
+#home {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+
+#image img {
+  width: 500px;
+  max-width: 100%;
+}
+
+#content {
+  max-width: 500px;
+  padding: 1rem;
+}
+
+#content h3 {
+  color: green;
+  font-size: 20px;
+}
+
+#content h1 {
+  font-size: 2rem;
+}
+
+#content p {
+  margin: 1rem 0;
+}
+
+#content button {
+  padding: 10px 20px;
+  background: #0b5f0b;
+  color: #fff;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+}
+#content button:hover{
+    background: #052705;
+}
+
+/* About Section */
+#about {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 3rem 2rem;
+  text-align: center;
+}
+
+#about #div2 {
+  width: 50%;
+  height: 600px;
+  background: url('assets/about.jpg') center/cover no-repeat;
+}
+
+#about #content {
+  max-width: 600px;
+  margin: auto;
+}
+
+#about h2 {
+  color: #032703;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+#about p {
+  line-height: 1.8;
+  font-size: 15px;
+}
+
+/* Categories */
+#categories {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  padding: 3rem 1rem;
+}
+
+.card {
+  width: 260px;
+  background: #093b09;
+  color: #fff;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  text-align: center;
+  padding-bottom: 1rem;
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: rotateX(30deg) translateX(10px);
+  box-shadow:10px 9px 6px #3f5c3f;
+}
+
+.card-image {
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+}
+
+#card1 {
+  background-image: url('assets/story.jpg');
+}
+#card2 {
+  background-image: url('assets/history.jpg');
+}
+#card3 {
+  background-image: url('assets/textbook.jpg');
+}
+#card4 {
+  background-image: url('assets/novel.jpeg'); /* Replace with your actual image path */
+  background-size: cover;
+  background-position: center;
+}
+
+.text {
+  padding: 1rem;
+}
+
+/* API Results */
+#apiResults {
+  padding: 2rem;
+  background: #f5f5f5;
+  text-align: center;
+}
+
+#booksContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.bookCard {
+  width: 160px;
+  padding: 1rem;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  text-align: center;
+  transition: transform 0.2s;
+}
+
+.bookCard:hover {
+  transform: scale(1.03);
+}
+
+.bookCard img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.bookCard h3 {
+  font-size: 1rem;
+  margin: 0.5rem 0;
+}
+
+.bookCard p {
+  font-size: 0.85rem;
+}
+
+/* Contact Section */
+#contactUs {
+  padding: 3rem 2rem;
+  background-color: #f8f8f8;
+  text-align: center;
+}
+
+#contactUs form {
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+  margin: auto;
+  gap: 1rem;
+}
+
+#contactUs input, #contactUs textarea {
+  padding: 0.8rem;
+  border-radius: 0.5rem;
+  border: 1px solid #ccc;
+  width: 100%;
+}
+
+#contactUs button {
+  padding: 0.75rem;
+  background-color: #0b5f0b;
+  color: #fff;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+.social-media {
+  margin-top: 2rem;
+}
+
+.social-media a {
+  margin: 0 1rem;
+  font-size: 1.8rem;
+  color: #032703;
+}
+.view-btn {
+  display: inline-block;
+  margin-top: 0.5rem;
+  padding: 0.4rem 0.8rem;
+  background-color: #0b5f0b;
+  color: #fff;
+  border-radius: 4px;
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: background-color 0.3s ease;
+}
+
+.view-btn:hover {
+  background-color: #064a06;
+}
